@@ -1,0 +1,53 @@
+.container {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+
+
+.title{
+  color: orange;
+  font-weight: bold;
+}
+.details{
+  width: 150px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: rgb(124,204,4);
+  margin: 5px 0;
+}
+.details a{
+  text-decoration: none;
+  color: white;
+}
+
+.company{
+  font-weight: bold
+}
+
+
+.pagination{
+  margin: 10px 35%;
+  display: flex;
+}
+
+.pagination div{
+  margin: 10px;
+  color: #1999d9;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.footer{
+  background-color: #1999d9;
+  height: 20vh;
+  width: 100%;
+  box-shadow: 0 0 4px 0 black;
+}
+
+img{
+  width: 50px;
+  height: 50px;
+  margin: 10px 44%;
+}
