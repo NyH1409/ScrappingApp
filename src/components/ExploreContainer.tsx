@@ -1,4 +1,4 @@
-import { IonButton, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonIcon, IonSearchbar } from '@ionic/react';
+import { IonButton, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonIcon, IonSearchbar, useIonAlert } from '@ionic/react';
 import axios from "axios";
 import { addCircle, arrowBackCircle, arrowForwardCircle } from 'ionicons/icons';
 import { useEffect, useRef, useState } from 'react';
@@ -14,12 +14,12 @@ const ExploreContainer: React.FC<ContainerProps> = () => {
 
   
   const [desc, setDesc] = useState<boolean>(false);
-  const [descbutton, setDescbutton] = useState<string>("Plus de details");
+  const [descbutton, setDescbutton] = useState<string>("More details");
   const [test, setTest] = useState<{title:string, company:string, contract:string, description:string, limit_date:string, }[]>([]);
   const [test2, setTest2] = useState<{title:string, company:string, contract:string, description:string, limit_date:string, }[]>([]);
   const [id, setId] = useState<number>(1);
   const ref = useRef<any>(null);
-
+  const [ alertError ] = useIonAlert();
   useEffect(()=>{
     const promise = axios.get("http://wspc52.herokuapp.com/"+id);
     promise.then((response)=>{
@@ -29,17 +29,21 @@ const ExploreContainer: React.FC<ContainerProps> = () => {
       setTest2(response.data.information);
     })
     .catch((err)=>{
-      console.error(err);
+      alertError({
+        header: "No internet",
+        message : "Internet is required to load data",
+        buttons: ["OK"]
+      })
     })
   }, [id])
 
   function showDesc():void {
     setDesc(!desc);
-    if(descbutton === "Plus de details"){
-      setDescbutton("Moins de details");
+    if(descbutton === "More details"){
+      setDescbutton("Less details");
     }
     else{
-      setDescbutton("Plus de details")
+      setDescbutton("More details")
     }
   }
 
