@@ -1,4 +1,4 @@
-export let posts1 = [
+export let posts = [
     {
         title: "TELE ASSISTANT(E)S ADMINISTRATIF(VE)S Expertise automobile - réf :TAA 202207 ",
         company: "NACRE-SOLUTIONS",
@@ -55,9 +55,6 @@ export let posts1 = [
         date: "",
         details: "https://www.portaljob-madagascar.com/emploi/view/symrise-responsable-environnement-ref-rrh-07-2022-sambava106666"
     },
-]
-
-export const posts2 = [
     {
         title: "Développeur FullStack -réf:DEVFULL/06/22",
         company: "KONTIKI SERVICE",
@@ -106,9 +103,6 @@ export const posts2 = [
         date: "12 Juil 2022",
         details: "https://www.portaljob-madagascar.com/emploi/view/apeaf-integrateur-wordpress-charge-de-communication106813"
     },
-]
-
-export const posts3 = [
     {
         title: "DESSINATEUR INDUSTRIEL",
         company: "PRODUCTION INDUSTRIELLE ",
@@ -157,9 +151,6 @@ export const posts3 = [
         date: "12 Juil 2022",
         details: "https://www.portaljob-madagascar.com/emploi/view/corban-performance-superviseur-paye-reporting106807"
     },
-]
-
-export const posts4 = [
     {
         title: "CHEF MECANICIEN",
         company: "Tozzi Green Hydro Madagascar",
@@ -208,9 +199,6 @@ export const posts4 = [
         date: "12 Juil 2022",
         details: "https://www.portaljob-madagascar.com/emploi/view/corban-performance-superviseur-paye-reporting106807"
     },
-]
-
-export const posts5 = [
     {
         title: "CHEF MECANICIEN",
         company: "Tozzi Green Hydro Madagascar",
@@ -259,9 +247,6 @@ export const posts5 = [
         date: "12 Juil 2022",
         details: "https://www.portaljob-madagascar.com/emploi/view/mt1116-responsable-qualite-et-conformite-chantier-de-btp106800"
     },
-]
-
-export const posts6 = [
     {
         title: "Comptable",
         company: "ATI",
@@ -310,9 +295,6 @@ export const posts6 = [
         date: "12 Juil 2022",
         details: "https://www.portaljob-madagascar.com/emploi/view/lecofruit-charge-de-recrutement106796"
     },
-]
-
-export const posts7 = [
     {
         title: "UN CHARGE D’ETUDE COURANT FAIBLE",
         company: "LOTUS IMMOBILIER",
